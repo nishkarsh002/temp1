@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Add Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#" class="active">Add Quiz</a></li>
+                <li><a href="#">View Quizzes</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Add Quiz</h1>
+            <form id="addQuizForm">
+                <div class="form-group">
+                    <label for="quizTitle">Quiz Title</label>
+                    <input type="text" id="quizTitle" name="quizTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="quizDescription">Quiz Description</label>
+                    <textarea id="quizDescription" name="quizDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quizTime">Quiz Time (in minutes)</label>
+                    <input type="number" id="quizTime" name="quizTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="quizPrice">Quiz Price (in $)</label>
+                    <input type="number" id="quizPrice" name="quizPrice" step="0.01" required>
+                </div>
+                <button type="submit">Add Quiz</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
